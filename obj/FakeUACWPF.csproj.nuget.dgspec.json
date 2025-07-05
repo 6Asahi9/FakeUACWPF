@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asahi\\Desktop\\FakeUACWPF\\FakeUACWPF.csproj": {}
+    "C:\\Users\\Asahi\\Documents\\PersonalProjects\\FakeUACWPF\\FakeUACWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asahi\\Desktop\\FakeUACWPF\\FakeUACWPF.csproj": {
+    "C:\\Users\\Asahi\\Documents\\PersonalProjects\\FakeUACWPF\\FakeUACWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asahi\\Desktop\\FakeUACWPF\\FakeUACWPF.csproj",
+        "projectUniqueName": "C:\\Users\\Asahi\\Documents\\PersonalProjects\\FakeUACWPF\\FakeUACWPF.csproj",
         "projectName": "FakeUACWPF",
-        "projectPath": "C:\\Users\\Asahi\\Desktop\\FakeUACWPF\\FakeUACWPF.csproj",
+        "projectPath": "C:\\Users\\Asahi\\Documents\\PersonalProjects\\FakeUACWPF\\FakeUACWPF.csproj",
         "packagesPath": "C:\\Users\\Asahi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asahi\\Desktop\\FakeUACWPF\\obj\\",
+        "outputPath": "C:\\Users\\Asahi\\Documents\\PersonalProjects\\FakeUACWPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asahi\\AppData\\Roaming\\NuGet\\NuGet.Config"
