@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FakeUACWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b5cc32bb7b5b179da9787ddbb6cb03b3fce6aba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a7d366cbf39b882e0ec57123e21bf1967750685")]
 [assembly: System.Reflection.AssemblyProductAttribute("FakeUACWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FakeUACWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
