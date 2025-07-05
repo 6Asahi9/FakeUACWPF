@@ -109,10 +109,13 @@
                 </StackPanel>
 
                 <!-- Buttons -->
-                <StackPanel Orientation="Horizontal"
+                <StackPanel x:Name="ButtonPanel"
+                            Orientation="Horizontal"
                             Margin="6,12,6,12"
                             Grid.Row="2"
-                            HorizontalAlignment="Center">
+                            HorizontalAlignment="Center"
+                            Panel.ZIndex="2">
+                    
                     <!-- Yes -->
                     <Button Content="Yes"
                             Width="203" Height="29"
@@ -142,11 +145,12 @@
                     </Button>
 
                     <!-- No -->
-                    <Button Content="No"
+                    <Button x:Name="NoButton"
+                            Content="No"
                             Width="203" Height="29"
                             FontSize="14"
-                            Background="#1A4DAB"
-                            Foreground="White"
+                            Background="#3399FF"
+                            Foreground="Black"
                             BorderThickness="0"
                             Click="No_Click"
                             Margin="5,0,0,0">
@@ -159,13 +163,25 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="btn" Property="Background" Value="#3399FF"/>
+                                        <Setter TargetName="btn" Property="Background" Value="#99CCFF"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
                 </StackPanel>
+
+                <!-- Floating white outline for "No" button -->
+                <Border Width="213" Height="40"
+                        BorderBrush="White"
+                        BorderThickness="1.2"
+                        Background="Transparent"
+                        CornerRadius="10"
+                        Panel.ZIndex="10"
+                        Grid.Row="2"
+                        HorizontalAlignment="Center"
+                        Margin="214,0,0,0"
+                        IsHitTestVisible="False"/>
             </Grid>
         </Border>
 
