@@ -149,7 +149,7 @@
                             Content="No"
                             Width="203" Height="29"
                             FontSize="14"
-                            Background="#3399FF"
+                            Background="#66B2FF"
                             Foreground="Black"
                             BorderThickness="0"
                             Click="No_Click"
@@ -163,7 +163,7 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="btn" Property="Background" Value="#99CCFF"/>
+                                        <Setter TargetName="btn" Property="Background" Value="#B3D9FF"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
