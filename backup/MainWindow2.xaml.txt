@@ -26,15 +26,17 @@
                 Panel.ZIndex="2">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="{DynamicResource UACHeaderColor}" Offset="0.0"/>
-                    <GradientStop Color="{DynamicResource UACHeaderColor}" Offset="0.301"/>
+                    <!-- Header: 0 to 0.301 -->
+                    <GradientStop Color="#353535  " Offset="0.0"/>
+                    <GradientStop Color="#353535  " Offset="0.301"/>
 
-                    <GradientStop Color="{DynamicResource UACMiddleColor}" Offset="0.301"/>
-                    <GradientStop Color="{DynamicResource UACMiddleColor}" Offset="0.783"/>
-                    
-                    <GradientStop Color="{DynamicResource UACBottomColor}" Offset="0.783"/>
-                    <GradientStop Color="{DynamicResource UACBottomColor}" Offset="1.0"/>
+                    <!-- Middle: 0.301 to 0.783 -->
+                    <GradientStop Color="#292929 " Offset="0.301"/>
+                    <GradientStop Color="#292929 " Offset="0.783"/>
 
+                    <!-- Bottom: 0.783 to 1.0 -->
+                    <GradientStop Color="#1A1A1A" Offset="0.783"/>
+                    <GradientStop Color="#1A1A1A" Offset="1.0"/>
                 </LinearGradientBrush>
             </Border.Background>
 
@@ -118,7 +120,7 @@
                     <Button Content="Yes"
                             Width="203" Height="29"
                             FontSize="14"
-                            Background="{DynamicResource YesButtonColor}"
+                            Background="#292929"
                             Foreground="White"
                             BorderThickness="0"
                             Click="Yes_Click"
@@ -132,10 +134,10 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="{DynamicResource YesButtonHoverColor}"/>
+                                        <Setter TargetName="border" Property="Background" Value="#262626"/>
                                     </Trigger>
                                     <Trigger Property="IsPressed" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="{DynamicResource YesButtonHoverColor}"/>
+                                        <Setter TargetName="border" Property="Background" Value="#262626"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -147,7 +149,7 @@
                             Content="No"
                             Width="203" Height="29"
                             FontSize="14"
-                            Background="{DynamicResource NoButtonColor}"
+                            Background="#24aae2"
                             Foreground="Black"
                             BorderThickness="0"
                             Click="No_Click"
@@ -161,7 +163,7 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="btn" Property="Background" Value="{DynamicResource NoButtonHoverColor}"/>
+                                        <Setter TargetName="btn" Property="Background" Value="#5FD6F8"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
