@@ -50,7 +50,7 @@
                         Content="✖"
                         FontSize="10"
                         FontWeight="Normal"
-                        Foreground="White"
+                        Foreground="{DynamicResource NoButtonBorderColor}"
                         Background="Transparent"
                         BorderBrush="Transparent"
                         Cursor="Hand"
@@ -71,11 +71,11 @@
                 <!-- Header -->
                 <StackPanel Margin="16,12,16,0" Grid.Row="0">
                     <TextBlock Text="User Account Control"
-                               Foreground="White"
+                               Foreground="{DynamicResource PrimaryTextColor}"
                                FontSize="12"
                                FontWeight="Normal"/>
                     <TextBlock Text="Do you want to allow this app to make changes to your device?"
-                               Foreground="White"
+                               Foreground="{DynamicResource PrimaryTextColor}"
                                FontSize="20"
                                FontWeight="Normal"
                                TextWrapping="Wrap"
@@ -89,19 +89,19 @@
                         <TextBlock Text="Miya Desktop"
                                    FontSize="18"
                                    FontWeight="Normal"
-                                   Foreground="White"
+                                   Foreground="{DynamicResource PrimaryTextColor}"
                                    Margin="15,6,0,0"
                                    VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <TextBlock Text="Publisher: Unknown" 
-                               Foreground="White"
-                               FontSize="16"
+                               Foreground="{DynamicResource PrimaryTextColor}"
+                               FontSize="15"
                                Margin="0,20,0,0"/>
 
                     <TextBlock Text="Show more details"
-                               Foreground="#3399FF"
-                               FontSize="16"
+                               Foreground="{DynamicResource AccentTextColor}"
+                               FontSize="15"
                                Cursor="Hand"
                                Margin="0,20,0,0"/>
                 </StackPanel>
@@ -119,7 +119,7 @@
                             Width="203" Height="29"
                             FontSize="14"
                             Background="{DynamicResource YesButtonColor}"
-                            Foreground="White"
+                            Foreground="{DynamicResource YesButtonTextColor}"
                             BorderThickness="0"
                             Click="Yes_Click"
                             Margin="0,0,5,0">
@@ -148,7 +148,7 @@
                             Width="203" Height="29"
                             FontSize="14"
                             Background="{DynamicResource NoButtonColor}"
-                            Foreground="Black"
+                            Foreground="{DynamicResource NoButtonTextColor}"
                             BorderThickness="0"
                             Click="No_Click"
                             Margin="5,0,0,0">
@@ -171,8 +171,8 @@
 
                 <!-- Floating white outline for "No" button -->
                 <Border Width="213" Height="40"
-                        BorderBrush="White"
-                        BorderThickness="1.2"
+                        BorderBrush="{DynamicResource NoButtonBorderColor}"
+                        BorderThickness="2.5"
                         Background="Transparent"
                         CornerRadius="10"
                         Panel.ZIndex="10"

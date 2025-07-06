@@ -1,16 +1,30 @@
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Color x:Key="NoButtonColorHex">#24AAE2</Color>
-    <Color x:Key="NoButtonHoverColorHex">#5FD6F8</Color>
-    <Color x:Key="YesButtonColorHex">#292929</Color>
-    <Color x:Key="YesButtonHoverColorHex">#262626</Color>
     <Color x:Key="UACHeaderColor">#353535</Color>
     <Color x:Key="UACMiddleColor">#292929</Color>
     <Color x:Key="UACBottomColor">#1A1A1A</Color>
 
-    <SolidColorBrush x:Key="NoButtonColor" Color="{StaticResource NoButtonColorHex}"/>
-    <SolidColorBrush x:Key="NoButtonHoverColor" Color="{StaticResource NoButtonHoverColorHex}"/>
-    <SolidColorBrush x:Key="YesButtonColor" Color="{StaticResource YesButtonColorHex}"/>
-    <SolidColorBrush x:Key="YesButtonHoverColor" Color="{StaticResource YesButtonHoverColorHex}"/>
+    <Color x:Key="YesButtonColorHex">#292929</Color>
+    <Color x:Key="YesButtonHoverColorHex">#262626</Color>
+    
+    <Color x:Key="NoButtonColorHex">#24AAE2</Color>
+    <Color x:Key="NoButtonHoverColorHex">#5FD6F8</Color>
+
+    <SolidColorBrush x:Key="AccentTextColor" Color="#5FD6F8" />
+    
+    <SolidColorBrush x:Key="PrimaryTextColor" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="SecondaryTextColor" Color="#CCCCCC"/>
+    <SolidColorBrush x:Key="ButtonTextColor" Color="#FFFFFF"/>
+
+    <SolidColorBrush x:Key="YesButtonTextColor" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="NoButtonTextColor" Color="#000000"/>
+
+    <SolidColorBrush x:Key="YesButtonColor" Color="{StaticResource YesButtonColorHex}" />
+    <SolidColorBrush x:Key="YesButtonHoverColor" Color="{StaticResource YesButtonHoverColorHex}" />
+    
+    <SolidColorBrush x:Key="NoButtonColor" Color="{StaticResource NoButtonColorHex}" />
+    <SolidColorBrush x:Key="NoButtonHoverColor" Color="{StaticResource NoButtonHoverColorHex}" />
+    <SolidColorBrush x:Key="NoButtonBorderColor" Color="White"/>
 </ResourceDictionary>
