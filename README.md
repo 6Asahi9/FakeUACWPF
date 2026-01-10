@@ -24,7 +24,7 @@ If you want to change the **Publisher name** or app-related text:
 
 - Open `MainWindow.xaml`
 - Look for the section marked:
-  <!-- App info -->
+  `<!-- App info -->`
 - Modify the values there
 
 ## Intentional Limitations
