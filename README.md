@@ -2,11 +2,11 @@
 
 ### Light mode
 
-![FakeUAC Light](Resources/FakeUAC-Light.png)
+![FakeUAC Light](resources/FakeUAC-Light.png)
 
 ### Dark mode
 
-![FakeUAC Dark](Resources/FakeUAC-Dark.png)
+![FakeUAC Dark](resources/FakeUAC-Dark.png)
 
 ## About
 
