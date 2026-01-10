@@ -4,7 +4,7 @@
 
 **Warning:**
 This demo contains a sudden video playback and a forced volume increase (jumpscare behavior).
-<video src="resources\Demo.mp4" controls></video>
+[▶ Demo video (contains jumpscare & loud audio)](resources/Demo.mp4)
 
 ### Light mode
 
