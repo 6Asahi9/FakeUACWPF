@@ -206,7 +206,7 @@
                    Foreground="White"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Bottom"
-                   Margin="0,0,50,50"
+                   Margin="0,0,47,51"
                    Panel.ZIndex="2"/>
     </Grid>
 </Window>
