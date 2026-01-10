@@ -4,7 +4,7 @@
 
 **Warning:**
 This demo contains a sudden video playback and a forced volume increase (jumpscare behavior).
-<video src="Resources/FakeUAC_Demo.mp4" controls></video>
+<video src="resources/Demo.mp4" controls></video>
 
 ### Light mode
 
