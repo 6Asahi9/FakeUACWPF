@@ -51,26 +51,26 @@
 
                 <!-- X Button -->
                 <Button Width="20" Height="20"
-                        Content="✖"
-                        FontSize="10"
-                        FontWeight="Normal"
-                        Foreground="{DynamicResource NoButtonBorderColor}"
                         Background="Transparent"
                         BorderBrush="Transparent"
                         Cursor="Hand"
                         Click="No_Click"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Top"
-                        Margin="0,6,6,0"
+                        Margin="0,6,8,0"
                         Grid.Row="0"
                         Panel.ZIndex="5"
                         FocusVisualStyle="{x:Null}">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </ControlTemplate>
-                    </Button.Template>
+
+                    <Path Stroke="{DynamicResource NoButtonBorderColor}"
+                        StrokeThickness="1"
+                        StrokeStartLineCap="Round"
+                        StrokeEndLineCap="Round"
+                        Data="M 3 3 L 13 13 M 13 3 L 3 13"/>
+                        <!-- M 3 3 L 15 15   → diagonal from top-left to bottom-right  -->
+                        <!-- M 15 3 L 3 15   → diagonal from top-right to bottom-left -->
                 </Button>
+
 
                 <!-- Header -->
                 <StackPanel Margin="16,12,16,0" Grid.Row="0">
@@ -82,7 +82,7 @@
 
                     <TextBlock Foreground="{DynamicResource PrimaryTextColor}"
                             FontSize="19.5"
-                            FontWeight="Normal"
+                            FontWeight="600"
                             Margin="6.5,18,0,6">
                         Do you want to allow this app to make
                         <LineBreak/>
@@ -95,9 +95,9 @@
                 <StackPanel Margin="16,6" Grid.Row="1">
                     <StackPanel Orientation="Horizontal" Margin="0,8,0,8">
                         <Rectangle Width="41" Height="30" Fill="Gray" RadiusX="4" RadiusY="4" Margin="8,9.5,0,0"/>
-                        <TextBlock Text="Miya Desktop"
+                        <TextBlock Text="Unknown"
                                    FontSize="18"
-                                   FontWeight="Normal"
+                                   FontWeight="500"
                                    Foreground="{DynamicResource PrimaryTextColor}"
                                    Margin="16,9.5,0,0"
                                    VerticalAlignment="Center"/>
