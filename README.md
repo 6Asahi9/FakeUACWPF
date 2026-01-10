@@ -1,5 +1,11 @@
 ## Preview
 
+### DEMO video
+
+**Warning:**
+This demo contains a sudden video playback and a forced volume increase (jumpscare behavior).
+<video src="Resources/FakeUAC_Demo.mp4" controls></video>
+
 ### Light mode
 
 ![FakeUAC Light](resources/FakeUAC-Light.png)
@@ -41,7 +47,7 @@ This is done **on purpose** to prevent misuse or deceptive real-world usage.
 When the **Yes** button is clicked:
 
 - A jumpscare video from the `Resources` folder is played named "jumpscare_cut.mp4"
-- System volume is forcefully increased
+- System volume is forcefully increased during jumpscare and then put the volume back to where it was before
 
 This behavior is intentional and part of the project’s demonstration.
 
