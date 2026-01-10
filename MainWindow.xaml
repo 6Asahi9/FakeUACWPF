@@ -13,7 +13,11 @@
 
     <Grid>
         <!-- Wallpaper background -->
-        <Image x:Name="WallpaperImage" Stretch="Fill" Panel.ZIndex="0" />
+        <Image x:Name="WallpaperImage"
+        Stretch="UniformToFill"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Panel.ZIndex="0" />
         <Rectangle Fill="#B0000000" Panel.ZIndex="1" />
 
         <!-- UAC Box -->
@@ -73,13 +77,18 @@
                     <TextBlock Text="User Account Control"
                                Foreground="{DynamicResource PrimaryTextColor}"
                                FontSize="12"
-                               FontWeight="Normal"/>
-                    <TextBlock Text="Do you want to allow this app to make changes to your device?"
-                               Foreground="{DynamicResource PrimaryTextColor}"
-                               FontSize="20"
                                FontWeight="Normal"
-                               TextWrapping="Wrap"
-                               Margin="0,12,0,0" />
+                               Margin="9,4,0,0"/>
+
+                    <TextBlock Foreground="{DynamicResource PrimaryTextColor}"
+                            FontSize="19.5"
+                            FontWeight="Normal"
+                            Margin="6.5,18,0,6">
+                        Do you want to allow this app to make
+                        <LineBreak/>
+                        changes to your device?
+                    </TextBlock>
+
                 </StackPanel>
 
                 <!-- App Info -->

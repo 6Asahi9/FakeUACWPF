@@ -1,28 +1,24 @@
-# 🐾 Miya says no to garbage
-
 # Build folders
 bin/
 obj/
-
 # User-specific files
 *.user
 *.suo
-
 # VS Code & Rider
 .vscode/
 .idea/
-
 # Temp files and logs
 *.log
 *.tmp
+
+
 
 # NuGet junk
 *.nupkg
 *.snupkg
 *.nuspec
 packages/
-
-# Project lock files (optional)
+# Project lock files 
 project.lock.json
 project.assets.json
 
@@ -32,6 +28,7 @@ project.assets.json
 # Publish output
 publish/
 
+
 # Local test results
 TestResults/
 *.coverage
@@ -39,3 +36,5 @@ TestResults/
 # System files
 .DS_Store
 Thumbs.db
+
+resources\jumpscare_cut.mp4
