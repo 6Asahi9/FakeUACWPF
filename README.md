@@ -4,7 +4,7 @@
 
 **Warning:**
 This demo contains a sudden video playback and a forced volume increase (jumpscare behavior).
-[Demo video](https://github.com/6Asahi9/FakeUACWPF/blob/main/resources/Demo.mp4)
+[Demo video](https://github.com/6Asahi9/FakeUACWPF/releases/download/v1.0.0/Demo.mp4)
 
 ### Light mode
 
