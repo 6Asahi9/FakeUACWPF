@@ -46,6 +46,7 @@ This is done **on purpose** to prevent misuse or deceptive real-world usage.
 
 When the **Yes** button is clicked:
 
+- Themes automatically change according to the system's theme (Light / Dark)
 - A jumpscare video from the `Resources` folder is played named "jumpscare_cut.mp4"
 - System volume is forcefully increased during jumpscare and then put the volume back to where it was before
 
