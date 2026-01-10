@@ -94,25 +94,25 @@
                 <!-- App Info -->
                 <StackPanel Margin="16,6" Grid.Row="1">
                     <StackPanel Orientation="Horizontal" Margin="0,8,0,8">
-                        <Rectangle Width="41" Height="41" Fill="Gray" RadiusX="4" RadiusY="4"/>
+                        <Rectangle Width="41" Height="30" Fill="Gray" RadiusX="4" RadiusY="4" Margin="8,9.5,0,0"/>
                         <TextBlock Text="Miya Desktop"
                                    FontSize="18"
                                    FontWeight="Normal"
                                    Foreground="{DynamicResource PrimaryTextColor}"
-                                   Margin="15,6,0,0"
+                                   Margin="16,9.5,0,0"
                                    VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <TextBlock Text="Publisher: Unknown" 
                                Foreground="{DynamicResource PrimaryTextColor}"
                                FontSize="15"
-                               Margin="0,20,0,0"/>
+                               Margin="9,20,0,0"/>
 
                     <TextBlock Text="Show more details"
                                Foreground="{DynamicResource AccentTextColor}"
                                FontSize="15"
                                Cursor="Hand"
-                               Margin="0,20,0,0"/>
+                               Margin="9,20,0,0"/>
                 </StackPanel>
 
                 <!-- Buttons -->
