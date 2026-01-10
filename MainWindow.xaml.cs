@@ -18,7 +18,6 @@ namespace FakeUACWPF
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // 🔥 STEP 1: Load the correct theme dictionary
             string themeDict = IsDarkTheme() ? "Themes/Dark.xaml" : "Themes/Light.xaml";
 
             var dictionary = new ResourceDictionary
@@ -29,7 +28,6 @@ namespace FakeUACWPF
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(dictionary);
 
-            // 🌄 STEP 2: Load the current wallpaper as background
             try
             {
                 string wallpaperPath = null;
@@ -58,14 +56,11 @@ namespace FakeUACWPF
                 this.Background = Brushes.Black;
             }
 
-            // 🔊 Play the fake UAC sound
             PlayUACSound();
 
-            // ⏳ Delay to simulate loading
             await Task.Delay(1500);
         }
 
-        // ✅ Function to detect system theme (Dark or Light)
         private static bool IsDarkTheme()
         {
             try
@@ -75,12 +70,12 @@ namespace FakeUACWPF
                 {
                     object value = key?.GetValue("AppsUseLightTheme");
                     if (value is int intValue)
-                        return intValue == 0; // 0 = dark mode
+                        return intValue == 0;
                 }
             }
             catch { }
 
-            return true; // Default to dark mode if unsure
+            return true;
         }
 
         private void PlayUACSound()
@@ -96,7 +91,6 @@ namespace FakeUACWPF
             }
             catch
             {
-                // If audio fails, just ignore
             }
         }
 

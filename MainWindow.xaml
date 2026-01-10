@@ -45,7 +45,7 @@
                     <RowDefinition Height="81"/>
                 </Grid.RowDefinitions>
 
-                <!-- X Button (no glow) -->
+                <!-- X Button -->
                 <Button Width="20" Height="20"
                         Content="✖"
                         FontSize="10"
@@ -142,7 +142,7 @@
                         </Button.Template>
                     </Button>
 
-                    <!-- No 66B2FF B3D9FF-->
+                    <!-- 66B2FF B3D9FF-->
                     <Button x:Name="NoButton"
                             Content="No"
                             Width="203" Height="29"
@@ -183,7 +183,7 @@
             </Grid>
         </Border>
 
-        <!-- Hidden jumpscare video -->
+        <!-- jumpscare video -->
         <MediaElement x:Name="JumpscareVideo"
                       LoadedBehavior="Manual"
                       UnloadedBehavior="Stop"
@@ -191,7 +191,6 @@
                       Stretch="Fill"
                       Panel.ZIndex="3"/>
 
-        <!-- ENG Label -->
         <TextBlock Text="ENG"
                    FontSize="16"
                    FontWeight="Bold"
