@@ -81,7 +81,9 @@ namespace FakeUACWPF
         private void PlayUACSound()
         {
             string systemPath = @"C:\Windows\Media\dm\Windows User Account Control.wav";
-            string fallbackPath = Path.Combine("resources", "uac.wav");
+            // string fallbackPath = Path.Combine("resources", "uac.wav");
+            string fallbackPath = Path.Combine(AppContext.BaseDirectory, "resources", "uac.wav");
+
             string chosenPath = File.Exists(systemPath) ? systemPath : fallbackPath;
 
             try
@@ -101,11 +103,12 @@ namespace FakeUACWPF
 
             PlayUACSound();
 
-            string videoPath = Path.Combine("resources", "jumpscare_cut.mp4");
+            string videoPath = Path.Combine(AppContext.BaseDirectory, "resources", "jumpscare_cut.mp4");
 
             if (File.Exists(videoPath))
             {
-                JumpscareVideo.Source = new Uri(Path.GetFullPath(videoPath));
+                // JumpscareVideo.Source = new Uri(Path.GetFullPath(videoPath));
+                JumpscareVideo.Source = new Uri(videoPath, UriKind.Absolute);
                 JumpscareVideo.Volume = 1.0;
                 JumpscareVideo.MediaEnded += (_, _) => Application.Current.Shutdown();
                 JumpscareVideo.Play();
