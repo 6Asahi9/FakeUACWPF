@@ -3,7 +3,7 @@
 ### DEMO video
 
 **Warning:**
-This demo contains a sudden video playback and a forced volume increase.
+This demo contains a sudden jumpscare.
 [Demo video](https://6Asahi9.github.io/FakeUACWPF/media/Demo.mp4)
 
 ### Light mode
